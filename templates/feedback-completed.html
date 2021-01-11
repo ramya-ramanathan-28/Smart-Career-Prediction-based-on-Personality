@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<title>The Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<link href='/static/styles/totalcss.css' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.custom-select {
+  left:600px;
+  right:600px;
+}
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #259add;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #259add	;
+    cursor: pointer;
+}
+</style>
+</head>
+ <style>
+ body{
+ background: url(https://subtlepatterns.com/patterns/scribble_light.png) #FFF;
+
+ }
+ img {
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     padding: 5px;
+     width: 400px;
+     max-width: 100%;
+     height: 400px;
+     object-fit: contain;
+ }
+ h1 {
+   font: Montserrat, serif;
+ }
+ </style>
+<script type="text/javascript">
+
+</script>
+
+
+<body>
+
+<!-- Page Content -->
+<div class="w3-black ">
+
+  <h1 style="text-align:left;font-weight:bold;">
+    The Guide.
+</h1>
+
+</div>
+<p> </p>
+
+
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-black" id = 'btnfeed' onclick="location.href = '/results/{{pType}}'">Your Results</button>
+    <button class="w3-bar-item w3-button tablink w3-blue" id = 'btncatalog' onclick="openCity(event,'feedback')">Give Feedback</button>
+  </div>
+
+
+  <div id="feedback" class="w3-container w3-border city" style="display:block" font-family: "Roboto", sans-serif>
+    <br><br><br>
+  <h3> Your feedback has been recorded, thank you for your time!</h3>
+
+  </div>
+
+
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+var slider1 = document.getElementById("myRange1");
+var output1 = document.getElementById("demo1");
+output1.innerHTML = slider.value;
+
+slider1.oninput = function() {
+  output1.innerHTML = this.value;
+}
+var slider2 = document.getElementById("myRange2");
+var output2 = document.getElementById("demo2");
+output2.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+var slider3 = document.getElementById("myRange3");
+var output3 = document.getElementById("demo3");
+output3.innerHTML = slider3.value;
+
+slider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+</script>
+
+
+
+<script>
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+//document.getElementById("btncatalog").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace("w3-gray", "w3-blue");
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace("w3-blue", "w3-gray");
+    }
+}
+
+function openRightMenu() {
+    document.getElementById("rightMenu").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("rightMenu").style.display = "none";
+}
+function req_close(num) {
+    document.getElementById("Request"+num).style.display = "none";
+}
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-blue";
+}
+
+</script>
+
+</body>
+</html>

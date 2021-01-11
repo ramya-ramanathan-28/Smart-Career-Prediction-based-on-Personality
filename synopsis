@@ -1,0 +1,18 @@
+Credit Card
+
+Introduction
+With a large section of the population choosing to use credit cards for all monetary transactions over physical money, the issue of fraudulent use of a person's credit card details also magnifies in impact and significance. Multiple credit card fraud cases are reported every day, and often the victim does not even find out about the fraud immediately. The later the detection, the harder it becomes to track down the culprit and recieve compensation. This indicates the need for a system that intelligently detects suspicious transactions and reports them as soon as possible. This will prove beneficial to the users, and faciliate easier implementation of measures to handle fraud cases. 
+
+Objective
+The aim of this project is to design a system that is able to identify suspicious credit card transactions, and intimate the card owner of the same at once. Suspicious transactions could be transactions involving unusually large amounts, or transactions in new cities. If the transaction is not actually fraudulent, the system must learn from this example and update its model. If the prediction is correct, however, the customer can begin to take measures to protect their card immedietaly. This will definitely help reduce the adverse impact of credit card frauds on the card owners.
+
+
+
+SMS Spam
+
+Introduction
+
+Spam messages have become the bane of every cellphone user's life, constantly flooding their messaging feed and sometimes drawing their attention away from messages that are actually important. These messages often do not even contain content pertinent to the user, rather containing a standard strucure of message that is broadcast to multiple users. Implemeting an automated system that could detect these spam messages directly and remove them from the feed would definitely improve every cellphone user's experience.
+
+Objective
+The aim of this project is to design a system that is capable of detecting spam messages that arrive on a user's phone through text messaging. The system will scan all incoming text messages to the phone, and classify them based on the contents of the text message. Spam messages will be filtered out, saving the user the effort that goes into manually deleting every spam message. 
